@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Main</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Your Name - Programmer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
   </head>
   <body>
-    <div class="rounded-box" id="projects-button">
-      <div class="orange-circle"></div>
-    </div>
-    <script src="script.js"></script>
+    <header>
+      <nav class="horizontal-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to My Website</h1>
+      <p id="intro"></p>
+    </main>
+    <footer>
+      <p>&copy; 2023 Your Name</p>
+    </footer>
+    <script>
+      loadJSON("data.json", function (data) {
+        document.getElementById("intro").innerText = data.intro;
+      });
+    </script>
   </body>
 </html>

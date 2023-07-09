@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Projects - Your Name</title>
+    <title>About - Your Name</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js"></script>
   </head>
@@ -18,21 +18,17 @@
       </nav>
     </header>
     <main>
-      <h1>Projects</h1>
-      <ul id="projects-list"></ul>
+      <h1>About Me</h1>
+      <p id="bio"></p>
+      <p id="education"></p>
     </main>
     <footer>
       <p>&copy; 2023 Your Name</p>
     </footer>
     <script>
       loadJSON("data.json", function (data) {
-        var projectsList = document.getElementById("projects-list");
-        data.projects.forEach(function (project) {
-          var listItem = document.createElement("li");
-          listItem.innerHTML =
-            "<strong>" + project.name + "</strong> - " + project.description;
-          projectsList.appendChild(listItem);
-        });
+        document.getElementById("bio").innerText = data.bio;
+        document.getElementById("education").innerText = data.education;
       });
     </script>
   </body>

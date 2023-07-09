@@ -1,0 +1,24 @@
+.horizontal-nav {
+  background-color: #f2f2f2;
+}
+
+.horizontal-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal-nav li {
+  margin-right: 20px;
+}
+
+.horizontal-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.horizontal-nav a:hover {
+  color: #555;
+}
