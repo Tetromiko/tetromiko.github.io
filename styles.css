@@ -21,7 +21,7 @@ html {
   width: 100%;
   background-color: var(--color-dark);
   box-shadow: 0 0 40px var(--color-dark);
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   z-index: 999;
 }
 
@@ -64,7 +64,7 @@ section {
   border-radius: 40px;
   background-color: var(--color-secondary);
   color: var(--color-primary);
-  box-shadow: 0 16px 16px var(--color-accent);
+  box-shadow: 0 10px 20px var(--color-accent);
 }
 
 .skill-name {
