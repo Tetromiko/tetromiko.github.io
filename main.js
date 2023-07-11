@@ -27,7 +27,7 @@ function loadJSON(file, callback) {
   xhr.send(null);
 }
 loadJSON("data.json", function (data) {
-  document.getElementById("about-text").innerText = `${data.about}`;
+  document.getElementById("about-text").innerText = data.about;
   document.getElementById("full-name").innerText = data.fullName;
 
   var hardSkillsCategories = document.getElementById("categories");
@@ -74,7 +74,7 @@ loadJSON("data.json", function (data) {
   var softSkillsList = document.getElementById("soft-skills-list");
   data.softSkills.forEach(function (skill) {
     var softSkillItem = document.createElement("div");
-    softSkillItem.innerText = `${skill}`;
+    softSkillItem.innerText = skill;
     softSkillsList.appendChild(softSkillItem);
   });
 
