@@ -1,24 +1,84 @@
 {
-  "intro": "Привіт! Я програміст з досвідом веб-розробки.",
-  "bio": "Мене звати Іван Іванов і я є програмістом з багаторічним досвідом роботи з різними технологіями веб-розробки.",
-  "education": "Закінчив Київський Національний Університет зі спеціальності Інформатика.",
-  "skills": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  "projects": [
+  "fullName": "Ruslan Titarenko",
+  "about": "Hello! My name is Ruslan Titarenko, and I am a passionate programmer. I have a wide range of interests and skills in the field of technology and software development, spanning from web development to game development. I am a self-taught programmer, constantly learning and exploring various areas of computer science and software development. My expertise lies in web development using HTML, CSS, and JavaScript. Additionally, I have experience with technologies such as WPF, WinForms, Unity, Adobe Illustrator, Adobe Photoshop, and 3D modeling. Currently, I am pursuing a degree in Computer Science at Donetsk National University named after Vasyl Stus. I am open to new challenges and always eager to learn and enhance my skills to create innovative and high-quality solutions in the field of programming.",
+  "hardSkills": [
     {
-      "name": "Веб-сайт компанії",
-      "description": "Розробка веб-сайту для компанії з можливістю замовлення товарів онлайн."
+      "category": "# - General - #",
+      "skills": [
+        { "name": "Git", "level": "3" },
+        { "name": "Project Management", "level": "4" },
+        { "name": "OOP", "level": "4" },
+        { "name": "Design Patterns", "level": "2" },
+        { "name": "Analysis and Optimization", "level": "4" },
+        { "name": "Data Structures and Algorithms", "level": "4" }
+      ]
     },
     {
-      "name": "Інтернет-магазин",
-      "description": "Розробка повноцінного інтернет-магазину зі зручним інтерфейсом та системою оплати."
+      "category": "{ - Web Development - }",
+      "skills": [
+        { "name": "HTML", "level": "4" },
+        { "name": "CSS", "level": "4" },
+        { "name": "JavaScript", "level": "3" },
+        { "name": "MySQL", "level": "2" },
+        { "name": "ASP.NET", "level": "1" }
+      ]
     },
     {
-      "name": "Блог",
-      "description": "Створення особистого блогу для ведення записів та обміну думками."
+      "category": "[ - Desktop Application Development - ]",
+      "skills": [
+        { "name": "C#", "level": "4" },
+        { "name": "WPF", "level": "3" },
+        { "name": "WinForms", "level": "3" },
+        { "name": "Java", "level": "2" },
+        { "name": "C++", "level": "2" },
+        { "name": "Python", "level": "2" }
+      ]
+    },
+    {
+      "category": "$ - Graphic Design -",
+      "skills": [
+        { "name": "Adobe Photoshop", "level": "3" },
+        { "name": "Adobe Illustrator", "level": "3" },
+        { "name": "Aseprite", "level": "4" },
+        { "name": "Blender", "level": "4" }
+      ]
+    },
+    {
+      "category": "@ - Game Development - @",
+      "skills": [{ "name": "Unity", "level": "3" }]
+    }
+  ],
+  "softSkills": [
+    "Effective Communication",
+    "Problem Solving",
+    "Adaptability",
+    "Teamwork",
+    "Time Management",
+    "Creativity",
+    "Attention to Detail",
+    "Critical Thinking",
+    "Leadership",
+    "Organizational Skills"
+  ],
+  "education": [
+    {
+      "institution": "Podil Scientific and Technical Lyceum for Gifted Youth",
+      "degree": "High School Diploma",
+      "startDate": "2019",
+      "endDate": "2021"
+    },
+    {
+      "institution": "Don State University named after Vasily Stus",
+      "degree": "Bachelor's Degree",
+      "major": "Computer Science",
+      "startDate": "2021",
+      "endDate": "Present"
     }
   ],
   "contact": {
-    "email": "ivan@example.com",
-    "phone": "123-456-7890"
+    "telegram": "https://t.me/tetromiko",
+    "github": "https://github.com/Tetromiko",
+    "email": "deberger.studio@gmail.com",
+    "phone": "+380685278382"
   }
 }

@@ -1,24 +1,114 @@
+:root {
+  --color-primary: #211d21;
+  --color-secondary: #fffbf2;
+  --color-background: #010a10;
+  --color-text: #dfe2db;
+  --color-accent: #c10206;
+  --color-dark: #a50113;
+}
+main {
+  margin: 10% 20% 10% 20%;
+}
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Source Code Pro", monospace;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-dark);
+  box-shadow: 0 0 40px var(--color-dark);
+  transition: transform 0.6s ease-in-out;
+  z-index: 999;
+}
+
+.fixed-header.hide {
+  transform: translateY(-160%);
+}
+
+.fixed-header.show {
+  transform: translateY(0);
+}
+
 .horizontal-nav {
-  background-color: #f2f2f2;
-}
-
-.horizontal-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.horizontal-nav li {
-  margin-right: 20px;
+.horizontal-nav h2 {
+  line-height: 0.2;
 }
-
 .horizontal-nav a {
+  margin-right: 10px;
+  margin-left: 10px;
   text-decoration: none;
-  color: #333;
+  color: var(--color-secondary);
+}
+#about-text {
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 240px;
+  height: 160px;
+  margin: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 16px 16px var(--color-accent);
+}
+
+.skill-name {
+  text-align: center;
   font-weight: bold;
 }
-
-.horizontal-nav a:hover {
-  color: #555;
+.skill-level {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+.level-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 4px;
+}
+.level-circle.active {
+  box-shadow: 0px 0px 8px var(--color-accent);
+  background-color: var(--color-accent);
+}
+.level-circle.inactive {
+  background-color: var(--color-primary);
+}
+.category-name {
+  text-align: center;
+}
+.category-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+}
+#contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact-social img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  filter: drop-shadow(0px 4px 8px var(--color-accent));
 }

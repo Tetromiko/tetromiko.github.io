@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Your Name - Programmer</title>
+    <title>Welcome to My Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="fixed-header show">
       <nav class="horizontal-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <h2><a href="#about">[ about ]</a></h2>
+        <h2><a href="#education">[ education ]</a></h2>
+        <h2><a href="#hard-skills">[ hard_skills ]</a></h2>
+        <h2><a href="#soft-skills">[ soft_skills ]</a></h2>
+        <h2><a href="#contact">[ contact ]</a></h2>
       </nav>
     </header>
     <main>
-      <h1>Welcome to My Website</h1>
-      <p id="intro"></p>
+      <section id="about">
+        <h2>About Me</h2>
+        <p id="about-text"></p>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul id="education-list"></ul>
+      </section>
+      <section id="hard-skills">
+        <h2>Hard skills</h2>
+        <div id="categories"></div>
+      </section>
+      <section id="soft-skills">
+        <h2>Soft skills</h2>
+        <ul id="soft-skills-list"></ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul id="contact-list"></ul>
+        <div id="contact-social"></div>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2023 Your Name</p>
+      <p>&copy; 2023 <span id="full-name"></span></p>
     </footer>
-    <script>
-      loadJSON("data.json", function (data) {
-        document.getElementById("intro").innerText = data.intro;
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
