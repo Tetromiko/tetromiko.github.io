@@ -48,10 +48,9 @@ html {
   text-decoration: none;
   color: var(--color-secondary);
 }
-#about-text {
+section {
   text-align: center;
 }
-
 .skill {
   display: flex;
   flex-direction: column;
@@ -97,9 +96,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-h2 {
-  text-align: center;
 }
 #contact-social {
   display: flex;

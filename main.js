@@ -73,14 +73,14 @@ loadJSON("data.json", function (data) {
 
   var softSkillsList = document.getElementById("soft-skills-list");
   data.softSkills.forEach(function (skill) {
-    var softSkillItem = document.createElement("li");
+    var softSkillItem = document.createElement("div");
     softSkillItem.innerText = skill;
     softSkillsList.appendChild(softSkillItem);
   });
 
   var educationList = document.getElementById("education-list");
   data.education.forEach(function (edu) {
-    var eduItem = document.createElement("li");
+    var eduItem = document.createElement("div");
     eduItem.innerHTML = `<strong>${edu.institution}</strong> - ${edu.degree} (${edu.startDate} - ${edu.endDate})`;
     educationList.appendChild(eduItem);
   });
@@ -98,9 +98,9 @@ loadJSON("data.json", function (data) {
   var githubItem = document.createElement("img");
   githubItem.setAttribute("draggable", "false");
   githubItem.setAttribute("src", "github.svg");
-  var emailItem = document.createElement("li");
+  var emailItem = document.createElement("div");
   emailItem.innerText = `Email: ${data.contact.email}`;
-  var phoneItem = document.createElement("li");
+  var phoneItem = document.createElement("div");
   phoneItem.innerText = `Phone: ${data.contact.phone}`;
   contactSocial.appendChild(telegramLink);
   telegramLink.appendChild(telegramItem);
