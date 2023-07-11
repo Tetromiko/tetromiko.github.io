@@ -56,7 +56,6 @@ loadJSON("data.json", function (data) {
       hardSkill.appendChild(hardSkillName);
       hardSkill.appendChild(hardSkillLevel);
       categorySkills.appendChild(hardSkill);
-      console.log(skill.level);
       for (let i = 0; i < skill.level; i++) {
         var levelCircle = document.createElement("div");
         levelCircle.classList.add("level-circle");
