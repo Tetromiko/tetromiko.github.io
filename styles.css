@@ -109,3 +109,11 @@ section {
   margin: 10px;
   filter: drop-shadow(0px 4px 8px var(--color-accent));
 }
+#photo img {
+  margin: 10px;
+  border-radius: 40px;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px var(--color-accent);
+}
