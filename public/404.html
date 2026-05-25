@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var params = new URLSearchParams(window.location.search);
+        var segments = path.split('/').filter(Boolean);
+        var firstSegment = segments[0] || '';
+        var isGithubIo = window.location.hostname.endsWith('.github.io');
+        var isLikelyUserSiteRoute = firstSegment === '' || firstSegment === 'admin';
+        var base = isGithubIo && !isLikelyUserSiteRoute ? '/' + firstSegment + '/' : '/';
+
+        var desiredPath = params.get('p');
+        if (!desiredPath) {
+          desiredPath = path.startsWith(base) ? path.slice(base.length - 1) : path;
+        }
+        if (!desiredPath || desiredPath === '') {
+          desiredPath = '/';
+        }
+        if (!desiredPath.startsWith('/')) {
+          desiredPath = '/' + desiredPath;
+        }
+
+        var target = base + '?p=' + encodeURIComponent(desiredPath);
+        var q = params.get('q');
+        var h = params.get('h');
+        if (q) target += '&q=' + encodeURIComponent(q);
+        if (h) target += '&h=' + encodeURIComponent(h);
+
+        var current = window.location.pathname + window.location.search + window.location.hash;
+        if (target !== current) {
+          window.location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

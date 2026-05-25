@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "name": "Your Name",
+    "title": "Frontend Developer",
+    "location": "Kyiv, Ukraine",
+    "summary": "Building practical web products with React and TypeScript."
+  },
+  "contacts": {
+    "email": "you@example.com",
+    "linkedin": "https://www.linkedin.com/in/your-profile"
+  }
+}
